@@ -27,11 +27,7 @@ This project allows users to switch playlists, play songs, control playback, see
 
 ## 🎥 Demo Video
 
-> Click the video below to watch the project in action.
-
-https://github.com/user-attachments/assets/your-video-link
-
-> Replace the above link after uploading your demo video.
+https://github.com/user-attachments/assets/ef184529-bb05-452d-8a9f-d501229812f4
 
 ---
 
