@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="fabicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+
+        <!-- -----------------------------Navbar------------------------------------------ -->
+
+        <div class="navBar">
+            <div class="logo">
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+            <div class="navHome navHomeHover">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="navSearchBar searchBarHover">
+                <div class="magnifyingGlass">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <input type="text" placeholder="What do you want to play ?" class="searchIn">
+
+                <div class="browse">
+                    <svg xmlns="http://h43.org" data-encore-id="icon" role="img" aria-hidden="true"
+                        class="e-10451-icon hoverScale" viewBox="0 0 24 24"
+                        style="width: 24px; height: 24px; fill: rgb(195, 195, 195);">
+                        <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"></path>
+                        <path
+                            d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H2V3h6v3h4Z">
+                        </path>
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="navOptLst1">
+                <ul>
+                    <li class="hoverScale">Premium</li>
+                    <li class="hoverScale">Support</li>
+                    <li class="hoverScale">Download</li>
+                </ul>
+            </div>
+
+            <div class="navOptLst2">
+                <ul>
+                    <li class="hoverScale"><i class="fa-solid fa-download hoverScale"></i> Install App</li>
+                    <li class="hoverScale">Sign up</li>
+                </ul>
+            </div>
+
+            <div class="loginBtn">
+                <button>Log in</button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <!-- ------------------------------------main------------------------------- -->
+
+        <div class="main">
+
+            <!-- ----------------------------------left side panel------------------ -->
+            <div class="leftSidePanel">
+
+                <div class="leftPanelNav">
+                    <h4>Your Library</h4>
+                    <div class="addBtn">
+                        <button>+</button>
+                    </div>
+                </div>
+
+                <div class="scrollBar">
+                    <div class="scrollBox1">
+                        <h4>Create your first playlist</h4>
+                        <p>It’s easy, we’ll help you</p>
+                        <button>Create playlist</button>
+                    </div>
+
+                    <div class="scrollBox2">
+                        <h4>Let’s find some podcasts to follow</h4>
+                        <p>We’ll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+
+
+                <div class="playlistSection">
+                    <h4>Playlist</h4>
+                    <div class="nameOfList">
+                        <ol>
+                            <li>Chill</li>
+                            <li>Love</li>
+                            <li>Motivation</li>
+                            <li>Workout</li>
+                            <li>Gaming</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ---------------------------right main panel--------------------------- -->
+            <div class="rightMainPanel">
+                <div class="songsSection">
+                    <div class="trendingSongHeading">
+                        <h2 class="headingName"></h2>
+                    </div>
+                    <div class="songsCard">
+                        <div class="card1 card">
+                            <img src="Music_Cover.png" alt="songIm">
+                            <p class="songName"></p>
+                            <div class="playBtnHover"><i class="fa-solid fa-play"></i></div>
+                        </div>
+
+                        <div class="card1 card">
+                            <img src="Music_Cover.png" alt="songIm">
+                            <p class="songName"></p>
+                            <div class="playBtnHover"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card1 card">
+                            <img src="Music_Cover.png" alt="songIm">
+                            <p class="songName"></p>
+                            <div class="playBtnHover"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card1 card">
+                            <img src="Music_Cover.png" alt="songIm">
+                            <p class="songName"></p>
+                            <div class="playBtnHover"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="card1 card">
+                            <img src="Music_Cover.png" alt="songIm">
+                            <p class="songName"></p>
+                            <div class="playBtnHover"><i class="fa-solid fa-play"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- -----------------------------play bar------------------------------ -->
+                <div class="playbar">
+                    <div class="current-song-info">
+                        <p id="current-track-name">No Song Playing</p>
+                    </div>
+
+  
+                    <div class="playbar-center">
+
+                        <div class="playbar-controls">
+                            <div class="previous"><i class="fas fa-step-backward"></i></div>
+                            <div class="play"><i class="fa-solid fa-play"></i></div>
+                            <div class="next"><i class="fas fa-step-forward"></i></div>
+                        </div>
+
+                        <div class="seekbar-container">
+                            <span id="current-time">0:00</span>
+                            <input type="range" id="seekbar" min="0" max="100" value="0">
+                            <span id="total-duration">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="volume-container">
+                        <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
